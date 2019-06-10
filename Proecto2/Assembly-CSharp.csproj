@@ -76,61 +76,79 @@
     <Compile Include="Assets\Game Jam Template\Scripts\Menu\SetAudioLevels.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\Menu\ShowPanels.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" />
+    <Compile Include="Assets\Scripts\MenuLoader.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\VideoMainMenu.cs" />
     <Compile Include="Assets\Tutorial_Info\Scripts\Readme.cs" />
-    <Compile Include="Assets\VideoMainMenu.cs" />
     <None Include="Assets\ImportArt\kenney_watercraft_updated\License.txt" />
     <None Include="Assets\ImportArt\3d-nature-pack\License.txt" />
     <None Include="Assets\ImportArt\kenney_3droadpack_updated\Convert\Three.js (Blender)\readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\greySheet.xml" />
     <None Include="Assets\ImportArt\gamesources_updated\Readme.txt" />
     <None Include="Assets\ImportArt\kenney_platformerkit\License.txt" />
     <None Include="Assets\ImportArt\uipack-space\license.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\ImportArt\isometrictiles-water\readme.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\redSheet.xml" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\blueSheet.xml" />
     <None Include="Assets\ImportArt\uipack-space\Spritesheet\uipackSpace_sheet.xml" />
     <None Include="Assets\ImportArt\uipack_fixed\license.txt" />
     <None Include="Assets\ImportArt\kenney_naturepackextended_updated\Tools\Three.js (Blender)\readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\ImportArt\kenney_fontpackage\License.txt" />
     <None Include="Assets\ImportArt\kenney_naturepackextended_updated\License.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Game Jam Template\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ImportArt\kenneyDungeonPack_2.3\License.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\yellowSheet.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\ImportArt\kenney_3droadpack_updated\License.txt" />
     <None Include="Assets\ImportArt\kenney_natureKit\License.txt" />
     <None Include="Assets\ImportArt\kenney_modularbuildings_updated\License.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\ImportArt\kenney_watercraft_updated\Tools\Three.js (Blender)\readme.txt" />
     <None Include="Assets\ImportArt\gamesources_updated\License.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\ImportArt\kenney_digitalaudio\License.txt" />
     <None Include="Assets\ImportArt\graveyard-kit-2.0\License.txt" />
     <None Include="Assets\ImportArt\kenney_modularbuildings_updated\Tools\Three.js (Blender)\readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\greenSheet.xml" />
     <None Include="Assets\ImportArt\kenney_racingkit2\License.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\ImportArt\space-kit-1.0\License.txt" />
     <None Include="Assets\Game Jam Template\README.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\ImportArt\kenney_holidaypack\License.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/Source/Proecto2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -334,13 +352,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.1f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/Source/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/Source/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/Source/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/Source/RainShiper/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

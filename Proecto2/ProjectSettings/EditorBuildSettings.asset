@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneGame.unity
     guid: 309df01824709b8469a42bcdd5622a24
+  - enabled: 1
+    path: Assets/Scenes/Race.unity
+    guid: 4bcddb5a09a3f39448273315a1d22cd8
+  - enabled: 1
+    path: Assets/Scenes/Ultimate Race.unity
+    guid: 7928efd61b8acd441a3b88984e22995e
+  - enabled: 1
+    path: Assets/Scenes/Arcade.unity
+    guid: 653877f840b87cc408abca414b857a73
+  - enabled: 1
+    path: Assets/Scenes/Multiple Arcade.unity
+    guid: c4feac7760969f44485f62541510e2cf
   m_configObjects: {}
