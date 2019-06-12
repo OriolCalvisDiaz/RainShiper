@@ -113,17 +113,6 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
-    <Compile Include="Assets\CinemachineExamples\Scenes\Scripting\ScriptingExample.cs" />
-    <Compile Include="Assets\CinemachineExamples\Scenes\Trigger volumes\GenericTrigger.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Models\UnityCharacter\Scripts\CharacterMovement.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Models\UnityCharacter\Scripts\CharacterMovement2D.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateCamera.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateCameraWithDistance.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateCamOnPlay.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateObject.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ActivateTimeline.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\ExampleHelpWindow.cs" />
-    <Compile Include="Assets\CinemachineExamples\Shared\Scripts\MixingCameraBlend.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUI.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIButton.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIData.cs" />
@@ -140,17 +129,35 @@
     <Compile Include="Assets\Game Jam Template\Scripts\Menu\SetAudioLevels.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\Menu\ShowPanels.cs" />
     <Compile Include="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
+    <Compile Include="Assets\Scripts\Controls\Inputs\AxisButtonDrawer.cs" />
+    <Compile Include="Assets\Scripts\Controls\Inputs\DeviceTracker.cs" />
+    <Compile Include="Assets\Scripts\Controls\Inputs\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Controls\Inputs\KeyboardTracker.cs" />
+    <Compile Include="Assets\Scripts\Controls\Model\Controller.cs" />
+    <Compile Include="Assets\Scripts\Controls\Model\Flight.cs" />
     <Compile Include="Assets\Scripts\MenuLoader.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\Utiles\MinMax.cs" />
     <Compile Include="Assets\Scripts\VideoMainMenu.cs" />
     <Compile Include="Assets\Tutorial_Info\Scripts\Readme.cs" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
+    <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ImportArt\kenney_watercraft_updated\License.txt" />
     <None Include="Assets\ImportArt\3d-nature-pack\License.txt" />
     <None Include="Assets\ImportArt\kenney_3droadpack_updated\Convert\Three.js (Blender)\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\greySheet.xml" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_FaceHighlight.shader" />
     <None Include="Assets\ImportArt\gamesources_updated\Readme.txt" />
     <None Include="Assets\ImportArt\kenney_platformerkit\License.txt" />
     <None Include="Assets\ImportArt\uipack-space\license.txt" />
@@ -159,26 +166,39 @@
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\redSheet.xml" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\blueSheet.xml" />
     <None Include="Assets\ImportArt\uipack-space\Spritesheet\uipackSpace_sheet.xml" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitSolidColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_ReferenceUnlit.shader" />
     <None Include="Assets\ImportArt\uipack_fixed\license.txt" />
     <None Include="Assets\ImportArt\kenney_naturepackextended_updated\Tools\Three.js (Blender)\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_StandardVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexPicker.shader" />
     <None Include="Assets\ImportArt\kenney_fontpackage\License.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_HideVertices.shader" />
     <None Include="Assets\ImportArt\kenney_naturepackextended_updated\License.txt" />
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\ThirdPartyLicenses.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_FacePicker.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Game Jam Template\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ImportArt\kenneyDungeonPack_2.3\License.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\Font\SIL Open Font License.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\yellowSheet.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\ProCore\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
     <None Include="Assets\ImportArt\kenney_3droadpack_updated\License.txt" />
     <None Include="Assets\ImportArt\kenney_natureKit\License.txt" />
     <None Include="Assets\ImportArt\kenney_modularbuildings_updated\License.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\ImportArt\kenney_watercraft_updated\Tools\Three.js (Blender)\readme.txt" />
     <None Include="Assets\ImportArt\gamesources_updated\License.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_NormalPreview.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\ImportArt\kenney_digitalaudio\License.txt" />
     <None Include="Assets\ImportArt\graveyard-kit-2.0\License.txt" />
@@ -187,6 +207,8 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\greenSheet.xml" />
     <None Include="Assets\ImportArt\kenney_racingkit2\License.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_ScrollHighlight.shader" />
+    <None Include="Assets\ProCore\ProBuilder\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
@@ -194,6 +216,7 @@
     <None Include="Assets\ImportArt\space-kit-1.0\License.txt" />
     <None Include="Assets\Game Jam Template\README.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_SmoothingPreview.shader" />
     <None Include="Assets\ImportArt\kenney_holidaypack\License.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -426,6 +449,21 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>E:/Source/RainShiper/Proecto2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>E:/Source/RainShiper/Proecto2/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="KdTreeLib">
+      <HintPath>E:/Source/RainShiper/Proecto2/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>E:/Source/RainShiper/Proecto2/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderCore-Unity5">
+      <HintPath>E:/Source/RainShiper/Proecto2/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps-Unity5">
+      <HintPath>E:/Source/RainShiper/Proecto2/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
