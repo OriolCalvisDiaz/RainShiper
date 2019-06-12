@@ -4,78 +4,100 @@ using UnityEngine;
 
 public class Flight : Controller
 {
-    public float speed = 2.0f;
-    Vector3 flyVerocity;
-    [MinMaxSlider(-0.5f, 0.5f)]
-    public MinMax posY;
+
+
+    [MinMaxSlider(-100f, 100f)]
+    public MinMax speed;
+
+    [Range(0f,100f)]
+    public float timeZeroToMax = 2.5f;
+    [Range(0f, 100f)]
+    public float timeMaxToZero = 6f;
+    [Range(0f, 100f)]
+    public float timeBreakToZero = 1f;
+    [Range(0f, 100f)]
+    public float RayLarge = 4f;
+    [Range(-180f, 180f)]
+    public float turnAnglePerSec = 90f;
+
+    float accelRatePerSec;
+    float decelRatePerSec;
+    float breakRatePerSec;
+
+    float forwardVelocity;
+    float currentTurnX, currentTurnY;
+    bool accelChange;
+
+    private void Start()
+    {
+        accelRatePerSec = speed.Max / timeZeroToMax;
+        decelRatePerSec = -speed.Max / timeZeroToMax;
+        breakRatePerSec = -speed.Max / timeZeroToMax;
+        forwardVelocity = 0f;
+        currentTurnX = 0f;
+        currentTurnY = 0f;
+
+    }
 
     public override void ReadInput(InputData data)
     {
-        flyVerocity = Vector3.zero;
 
-        if(data.a[0] != 0f)
+        if (data.a[0] != 0f)
         {
-            flyVerocity += Vector3.forward * data.a[0] * speed;
+            currentTurnY = turnAnglePerSec * Time.deltaTime * (data.a[0] > 0 ? -1 : 1);
         }
-        if(data.a[1] != 0f)
+        if (data.a[1] != 0f)
         {
-            flyVerocity += Vector3.right * data.a[1] * speed;
+            currentTurnX = turnAnglePerSec * Time.deltaTime * (data.a[1] > 0 ? 1 : -1);
         }
+        //flyVerocity += (Vector3.up * data.a[1]) * vel;
+
+        //JUMPFLY
+        if (data.b[0] == true)
+        {
+            Accel(accelRatePerSec);
+        }
+        if (data.b[1] == true) { }
+            //ESC
+        if (data.b[2] == true)
+        {
+            forwardVelocity += breakRatePerSec * Time.deltaTime;
+            forwardVelocity = Mathf.Max(forwardVelocity, speed.Min);
+            accelChange = true;
+        }
+        if (data.b[7] == true) { }
+            //Pause
+
         newInput = true;
     }
 
+    bool Grounded() => Physics.Raycast(transform.position, Vector3.down, RayLarge);
+
     void LateUpdate()
     {
-        if (!newInput)
+        if (forwardVelocity != 0f)
         {
-            flyVerocity = Vector3.zero;
+            rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(currentTurnX, currentTurnY, 0));
         }
-        float y = 0f;
+        if (!accelChange) { 
+            Accel(decelRatePerSec);
+        }
+        rb.velocity = transform.forward * -forwardVelocity;
+
         newInput = false;
+        currentTurnY = currentTurnX = 0f;
+        accelChange = false;
+    }
 
-        if(transform.localPosition.y > 2.5f)
-        {
-            y = -0.5f;
-            Debug.Log("1");
+    void ResetMovement()
+    {
 
-        }
-        else if(transform.localPosition.y > 0.0f && transform.localPosition.y < 2.5f)
-        {
-            Debug.Log("2");
+    }
 
-            y = rb.velocity.y + (posY.RandomValue * Time.deltaTime);
-        }
-        if(transform.localPosition.y < 1.0f )
-        {
-            Debug.Log("3");
-
-            y = +0.5f;
-        }
-        else if(transform.localPosition.y < 2.5f && transform.localPosition.y > 1.0f)
-        {
-            Debug.Log("4");
-
-            y = 0.0f;
-            y = rb.velocity.y + (posY.RandomValue * Time.deltaTime);
-        }
-
-        rb.velocity = new Vector3(flyVerocity.x, y, flyVerocity.z);
-
-        //if (Input.GetKey(KeyCode.W))
-        //{
-        //    transform.position += Vector3.right * Time.deltaTime * speed;
-        //}
-        //if (Input.GetKey(KeyCode.A))
-        //{
-        //    transform.position += Vector3.forward * Time.deltaTime * speed;
-        //}
-        //if (Input.GetKey(KeyCode.S))
-        //{
-        //    transform.position += Vector3.left * Time.deltaTime * speed;
-        //}
-        //if (Input.GetKey(KeyCode.D))
-        //{
-        //    transform.position += Vector3.back * Time.deltaTime * speed;
-        //}
+    void Accel(float a)
+    {
+        forwardVelocity += a * Time.deltaTime;
+        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max);
+        accelChange = true;
     }
 }

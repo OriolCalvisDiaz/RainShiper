@@ -9,10 +9,12 @@ public abstract class Controller : MonoBehaviour
     public abstract void ReadInput(InputData data);
 
     protected Rigidbody rb;
+    protected Collider coll;
     protected bool newInput;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        coll = GetComponent<Collider>();
     }
 }
