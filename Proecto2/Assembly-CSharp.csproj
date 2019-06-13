@@ -141,7 +141,10 @@
     <Compile Include="Assets\Scripts\Controls\Inputs\KeyboardTracker.cs" />
     <Compile Include="Assets\Scripts\Controls\Model\Controller.cs" />
     <Compile Include="Assets\Scripts\Controls\Model\Flight.cs" />
+    <Compile Include="Assets\Scripts\EnemyIa.cs" />
     <Compile Include="Assets\Scripts\MenuLoader.cs" />
+    <Compile Include="Assets\Scripts\PointPath.cs" />
+    <Compile Include="Assets\Scripts\PoolPartyObjectives.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\Utiles\MinMax.cs" />
     <Compile Include="Assets\Scripts\VideoMainMenu.cs" />

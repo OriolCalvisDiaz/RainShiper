@@ -17,7 +17,7 @@ public class Flight : Controller
     public float timeBreakToZero = 1f;
     [Range(0f, 100f)]
     public float RayLarge = 4f;
-    [Range(-180f, 180f)]
+    [Range(-360f, 360f)]
     public float turnAnglePerSec = 90f;
 
     float accelRatePerSec;
