@@ -48,6 +48,15 @@ public class EnemyIa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.DrawRay(this.transform.position, Vector3.down, Color.blue, 3f);
+        //RaycastHit Hit;
+        //if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Hit, 3f))
+        //{
+        //    //if(Vector3.Distance(this.transform.position, Hit.transform.)
+        //    if (Vector3.Distance(this.transform.position, Hit.point) < 3f) {
+        //        transform.position = new Vector3(transform.position.x, transform.position.y + 3f, transform.position.z);
+        //    }
+        //}
         if (!(indexOfPoints >= PointPosition.ToArray().Length-1))
         {
 
@@ -56,7 +65,7 @@ public class EnemyIa : MonoBehaviour
             this.transform.rotation = Quaternion.LookRotation(agent.velocity.normalized);
 
                 //hit.collider.transform.position == PointPosition[indexOfPoints].PointPosition.position && hit.collider.isTrigger ||
-                if (Vector3.Distance(PointPosition[indexOfPoints].PointPosition.position, this.transform.position ) < 15f)
+                if (Vector3.Distance(PointPosition[indexOfPoints].PointPosition.position, transform.position ) < 15f)
                 {
                     indexOfPoints++;
                     NextOne.Next(PointPosition[indexOfPoints].PointCollider, PointPosition[indexOfPoints].PointPosition, indexOfPoints);
