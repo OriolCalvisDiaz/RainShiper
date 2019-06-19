@@ -8,6 +8,7 @@ TagManager:
   - Camera
   - Race
   - Map
+  - Space
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Race
   - Path
   - Camera
-  - 
+  - Space
   - 
   - 
   - 

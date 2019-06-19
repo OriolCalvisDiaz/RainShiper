@@ -820,6 +820,10 @@
       <Project>{E9B16DA6-6D3E-69E5-E070-B06739598F9B}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="merge-mesh-unity.Editor.csproj">
+      <Project>{903C6195-D442-F998-F2AF-43D704C915F9}</Project>
+      <Name>merge-mesh-unity.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

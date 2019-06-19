@@ -167,6 +167,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\ImportArt\isometrictiles-water\readme.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\redSheet.xml" />
+    <None Include="Assets\SimpleSky\ReadMe.txt" />
     <None Include="Assets\ImportArt\uipack_fixed\Spritesheet\blueSheet.xml" />
     <None Include="Assets\ImportArt\uipack-space\Spritesheet\uipackSpace_sheet.xml" />
     <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitSolidColor.shader" />
@@ -819,6 +820,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.1f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="merge-mesh-unity.Editor.csproj">
+      <Project>{903C6195-D442-F998-F2AF-43D704C915F9}</Project>
+      <Name>merge-mesh-unity.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

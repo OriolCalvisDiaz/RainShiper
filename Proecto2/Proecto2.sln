@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{D801C563-424A-72F6-C58E-CCE559AE80C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merge-mesh-unity.Editor", "merge-mesh-unity.Editor.csproj", "{903C6195-D442-F998-F2AF-43D704C915F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{D801C563-424A-72F6-C58E-CCE559AE80C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D801C563-424A-72F6-C58E-CCE559AE80C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D801C563-424A-72F6-C58E-CCE559AE80C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903C6195-D442-F998-F2AF-43D704C915F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903C6195-D442-F998-F2AF-43D704C915F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903C6195-D442-F998-F2AF-43D704C915F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903C6195-D442-F998-F2AF-43D704C915F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

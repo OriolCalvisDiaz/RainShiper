@@ -11,7 +11,22 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: bannerTowerGreen
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: c2ec14de5dbd5d742ad9242424cf5d1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass
+    second: {fileID: 2100000, guid: f6abc5010fea9574995a9427278299dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: 01f1d1136c562274383b9c08a91d431c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
