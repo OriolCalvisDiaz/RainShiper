@@ -52,7 +52,14 @@ public class Flight : Controller
 
         if (data.a[0] != 0f)
         {
-            currentTurnY = turnAnglePerSec * Time.deltaTime * (data.a[0] > 0 ? -1 : 1);
+            if (transform.localRotation.x <= 90)
+            {
+                currentTurnY = turnAnglePerSec * Time.deltaTime * (data.a[0] > 0 ? -1 : 1);
+            }
+            else
+            {
+                currentTurnY = turnAnglePerSec * Time.deltaTime * (data.a[0] > 0 ? 1 : -1);
+            }
         }
         if (data.a[1] != 0f)
         {
