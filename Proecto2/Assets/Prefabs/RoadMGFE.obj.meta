@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: f5f6c55a4959e5347901ea90c17145d5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: roadCornerSmall_(3)_roadCornerSmall_(3)__defaultMat
+    100002: roadCornerSmall_(3)_roadCornerSmall_(3)_grass
+    100004: roadCornerSmall_(3)_roadCornerSmall_(3)_red
+    100006: roadCornerSmall_(3)_roadCornerSmall_(3)_road
+    100008: roadCornerSmall_(3)_roadCornerSmall_(3)_wall
+    100010: roadCornerSmall_(3)_roadCornerSmall_(3)_white
+    100012: //RootNode
+    400000: roadCornerSmall_(3)_roadCornerSmall_(3)__defaultMat
+    400002: roadCornerSmall_(3)_roadCornerSmall_(3)_grass
+    400004: roadCornerSmall_(3)_roadCornerSmall_(3)_red
+    400006: roadCornerSmall_(3)_roadCornerSmall_(3)_road
+    400008: roadCornerSmall_(3)_roadCornerSmall_(3)_wall
+    400010: roadCornerSmall_(3)_roadCornerSmall_(3)_white
+    400012: //RootNode
+    2100000: roadCornerSmall_(3)_roadCornerSmall_(3)__defaultMatMat
+    2100002: roadCornerSmall_(3)_roadCornerSmall_(3)_grassMat
+    2100004: roadCornerSmall_(3)_roadCornerSmall_(3)_redMat
+    2100006: roadCornerSmall_(3)_roadCornerSmall_(3)_roadMat
+    2100008: roadCornerSmall_(3)_roadCornerSmall_(3)_wallMat
+    2100010: roadCornerSmall_(3)_roadCornerSmall_(3)_whiteMat
+    2300000: roadCornerSmall_(3)_roadCornerSmall_(3)__defaultMat
+    2300002: roadCornerSmall_(3)_roadCornerSmall_(3)_grass
+    2300004: roadCornerSmall_(3)_roadCornerSmall_(3)_red
+    2300006: roadCornerSmall_(3)_roadCornerSmall_(3)_road
+    2300008: roadCornerSmall_(3)_roadCornerSmall_(3)_wall
+    2300010: roadCornerSmall_(3)_roadCornerSmall_(3)_white
+    3300000: roadCornerSmall_(3)_roadCornerSmall_(3)__defaultMat
+    3300002: roadCornerSmall_(3)_roadCornerSmall_(3)_grass
+    3300004: roadCornerSmall_(3)_roadCornerSmall_(3)_red
+    3300006: roadCornerSmall_(3)_roadCornerSmall_(3)_road
+    3300008: roadCornerSmall_(3)_roadCornerSmall_(3)_wall
+    3300010: roadCornerSmall_(3)_roadCornerSmall_(3)_white
+    4300000: roadCornerSmall_(3)_roadCornerSmall_(3)__defaultMat
+    4300002: roadCornerSmall_(3)_roadCornerSmall_(3)_grass
+    4300004: roadCornerSmall_(3)_roadCornerSmall_(3)_red
+    4300006: roadCornerSmall_(3)_roadCornerSmall_(3)_road
+    4300008: roadCornerSmall_(3)_roadCornerSmall_(3)_wall
+    4300010: roadCornerSmall_(3)_roadCornerSmall_(3)_white
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

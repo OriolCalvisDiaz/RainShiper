@@ -9,6 +9,12 @@ public class Flight : Controller
     [MinMaxSlider(-100f, 100f)]
     public MinMax speed;
 
+    [MinMaxSlider(-100f, 100f)]
+    public MinMax normalSpeed;
+
+    [MinMaxSlider(-100f, 100f)]
+    public MinMax spaceSpeed;
+
     [Range(0f,100f)]
     public float timeZeroToMax = 2.5f;
     [Range(0f, 100f)]
@@ -20,13 +26,15 @@ public class Flight : Controller
     [Range(-360f, 360f)]
     public float turnAnglePerSec = 90f;
 
+    public bool onSpace;
+
     float accelRatePerSec;
     float decelRatePerSec;
     float breakRatePerSec;
 
     float forwardVelocity;
     float currentTurnX, currentTurnY;
-    bool accelChange;
+    public bool accelChange;
 
     private void Start()
     {
@@ -36,7 +44,7 @@ public class Flight : Controller
         forwardVelocity = 0f;
         currentTurnX = 0f;
         currentTurnY = 0f;
-
+        speed = normalSpeed;
     }
 
     public override void ReadInput(InputData data)
@@ -99,5 +107,32 @@ public class Flight : Controller
         forwardVelocity += a * Time.deltaTime;
         forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max);
         accelChange = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Space")
+        {
+            if (onSpace)
+            {
+                speed = normalSpeed;
+                onSpace = false;
+                Debug.Log("in");
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Space")
+        {
+            if (!onSpace)
+            {
+                speed = spaceSpeed;
+                onSpace = true;
+                Debug.Log("out");
+
+            }
+        }
     }
 }
