@@ -10,6 +10,7 @@ public class EnemyIa : MonoBehaviour
     public int indexOfPortal = 0;
     public PointPath StartPoint;
     public PointPath EndPoint;
+    public float distanceToCollide;
 
     [MinMaxSlider(-100f, 100f)]
     public MinMax speed;
@@ -72,7 +73,7 @@ public class EnemyIa : MonoBehaviour
             this.transform.rotation = Quaternion.LookRotation(agent.velocity.normalized);
 
                 //hit.collider.transform.position == PointPosition[indexOfPoints].PointPosition.position && hit.collider.isTrigger ||
-                if (Vector3.Distance(PointPosition[indexOfPoints].PointPosition.position, transform.position ) < 15f)
+                if (Vector3.Distance(PointPosition[indexOfPoints].PointPosition.position, transform.position ) < distanceToCollide)
                 {
                     indexOfPoints++;
                     NextOne.Next(PointPosition[indexOfPoints].PointCollider, PointPosition[indexOfPoints].PointPosition, indexOfPoints);
@@ -82,8 +83,10 @@ public class EnemyIa : MonoBehaviour
         else
         {
             agent.destination = EndPoint.PointPosition.position;
-
-                //LOSE
+            if (Player.win == false)
+            {
+                Player.lose = true;
+            }
 
         }
 
@@ -105,4 +108,5 @@ public struct NextPointPath
         PointPosition = b;
         num = c;
     }
+
 }

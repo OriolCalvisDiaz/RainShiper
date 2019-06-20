@@ -17,8 +17,8 @@ GameObject:
   m_Name: portal 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &121090867
 Transform:
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704158712}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.8, y: -0.57, z: 68.380005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -127,8 +127,8 @@ GameObject:
   m_Name: GameObject
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1940172018
 Transform:
@@ -138,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940172017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5, y: 7.4, z: 4.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 121090867}
@@ -156,7 +156,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.6131067, y: 10.46016, z: 0.6630707}
-  m_Center: {x: 4.67011, y: 6.9546237, z: 4.571762}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1940172019
 MonoBehaviour:
   m_ObjectHideFlags: 0

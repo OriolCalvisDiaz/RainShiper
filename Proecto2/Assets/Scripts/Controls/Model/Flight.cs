@@ -9,6 +9,8 @@ public abstract class Flight : Player
     public Color actualColor;
 
     public Text timer;
+    public Text scoreLabel;
+
     public Image panelsVelocity;
     public Image[] panelsLife;
 

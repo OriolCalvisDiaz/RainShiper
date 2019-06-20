@@ -146,6 +146,7 @@
     <Compile Include="Assets\Scripts\Controls\Model\Player.cs" />
     <Compile Include="Assets\Scripts\Controls\Model\RunerNavie.cs" />
     <Compile Include="Assets\Scripts\EnemyIa.cs" />
+    <Compile Include="Assets\Scripts\MapaRandomGeneric.cs" />
     <Compile Include="Assets\Scripts\MenuLoader.cs" />
     <Compile Include="Assets\Scripts\PointPath.cs" />
     <Compile Include="Assets\Scripts\PoolPartyObjectives.cs" />

@@ -10,7 +10,8 @@ public class RunerNavie : Flight
     public PostProcessProfile[] PPV;
     public PostProcessVolume PostProces;
 
-    public GameObject Panel;
+    public GameObject PanelW;
+    public GameObject PanelL;
 
     public List<PointPath> PointPosition;
 
@@ -36,6 +37,7 @@ public class RunerNavie : Flight
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<Collider>();
         timer.text = (timeLeft).ToString();
+        win = lose = false;
 
     }
 
@@ -95,10 +97,15 @@ public class RunerNavie : Flight
     private void LateUpdate()
     {
         timer.text = (Mathf.Round(timeLeft)).ToString();
+        scoreLabel.text = score.ToString();
 
-        if (win)
+        if (win && !lose)
         {
-            Panel.SetActive(true);
+            PanelW.SetActive(true);
+        }
+        else if(lose && !win)
+        {
+            PanelL.SetActive(true);
         }
         if (!stop && !win && !lose)
         {
@@ -135,23 +142,11 @@ public class RunerNavie : Flight
             }
 
             changeState = false;
-            //hit.collider.transform.position == PointPosition[indexOfPoints].PointPosition.position && hit.collider.isTrigger ||
-            if (countPortals <= PointPosition.ToArray().Length - 1)
-            {
-                if (Vector3.Distance(PointPosition[countPortals].PointPosition.position, transform.position) < 15f)
-                {
-                    countPortals++;
-                }
-            }
-        }
-        else
-        {
-///
 
         }
         newInput = false;
 
-        if ((countPortals >= 9))
+        if ((countPortals >= 20))
         {
             if (Vector3.Distance(EndPoint.PointPosition.position, transform.position) < 5f)
             {
@@ -192,8 +187,11 @@ public class RunerNavie : Flight
                 onTurbo = true;
                 if (comboSpeed <= 4)
                 {
+                    other.GetComponent<PointPath>().PasAPortal();
                     increseCombo();
                     ChargeVelocity();
+                    countPortals++;
+
                 }
 
                 other.gameObject.GetComponent<PointPath>().speed = false;
@@ -201,26 +199,31 @@ public class RunerNavie : Flight
                 switch (comboSpeed)
                 {
                     case 1:
+                        score += 10;
                         PostProces.profile = PPV[1];
                         panelsVelocity.color = Color.Lerp(actualColor, Color.blue, 1f);
                         timeLeft = 3;
                         break;
                     case 2:
+                        score += 20;
                         PostProces.profile = PPV[2];
                         panelsVelocity.color = Color.Lerp(actualColor, Color.green, 1f);
                         timeLeft = 5;
                         break;
                     case 3:
+                        score += 30;
                         PostProces.profile = PPV[3];
                         panelsVelocity.color = Color.Lerp(actualColor, Color.yellow, 1f);
                         timeLeft = 7;
                         break;
                     case 4:
+                        score += 40;
                         PostProces.profile = PPV[4];
                         panelsVelocity.color = Color.Lerp(actualColor, Color.red, 1f);
                         timeLeft = 10;
                         break;
                     case 5:
+                        score += 50;
                         PostProces.profile = PPV[5];
                         panelsVelocity.color = Color.Lerp(actualColor, Color.black, 1f);
                         timeLeft = 15;

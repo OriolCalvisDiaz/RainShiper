@@ -10352,7 +10352,7 @@ GameObject:
   - component: {fileID: 342974936}
   - component: {fileID: 342974935}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28179,8 +28179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.228, y: 1.2}
-  m_SizeDelta: {x: 35.33, y: 29.39}
+  m_AnchoredPosition: {x: 42.228, y: 0.32}
+  m_SizeDelta: {x: 35.33, y: 28.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916447855
 MonoBehaviour:
@@ -33068,6 +33068,10 @@ PrefabInstance:
     - target: {fileID: 1845522629, guid: 62e7b507a13592b4cb5ad560b091efe2, type: 3}
       propertyPath: speed.max
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845522629, guid: 62e7b507a13592b4cb5ad560b091efe2, type: 3}
+      propertyPath: distanceToCollide
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1420875852, guid: 62e7b507a13592b4cb5ad560b091efe2, type: 3}
       propertyPath: m_LocalRotation.y
@@ -44428,7 +44432,7 @@ PrefabInstance:
     - target: {fileID: 5847311958612298085, guid: 871adf466c74f4f41afb5637d96d7b9a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3521348235858365507, guid: 871adf466c74f4f41afb5637d96d7b9a,
         type: 3}
@@ -44459,6 +44463,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 368072238, guid: 871adf466c74f4f41afb5637d96d7b9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540944628, guid: 871adf466c74f4f41afb5637d96d7b9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 691238490, guid: 871adf466c74f4f41afb5637d96d7b9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 361462141, guid: 871adf466c74f4f41afb5637d96d7b9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065288036234733981, guid: 871adf466c74f4f41afb5637d96d7b9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 871adf466c74f4f41afb5637d96d7b9a, type: 3}
@@ -66224,6 +66249,7 @@ MonoBehaviour:
   indexOfPortal: 0
   StartPoint: {fileID: 6778593691750168891}
   EndPoint: {fileID: 6569518184135807175}
+  distanceToCollide: 15
   speed:
     min: 15
     max: 20
@@ -66317,6 +66343,7 @@ MonoBehaviour:
   indexOfPortal: 0
   StartPoint: {fileID: 6778593691750168891}
   EndPoint: {fileID: 6569518184135807175}
+  distanceToCollide: 15
   speed:
     min: 15
     max: 17
@@ -66533,6 +66560,7 @@ MonoBehaviour:
   indexOfPortal: 0
   StartPoint: {fileID: 6778593691750168891}
   EndPoint: {fileID: 6569518184135807175}
+  distanceToCollide: 15
   speed:
     min: 10
     max: 15
@@ -66896,6 +66924,7 @@ MonoBehaviour:
   indexOfPortal: 0
   StartPoint: {fileID: 6778593691750168891}
   EndPoint: {fileID: 6569518184135807175}
+  distanceToCollide: 15
   speed:
     min: 10
     max: 20
@@ -67040,6 +67069,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 26.752575
       objectReference: {fileID: 0}
+    - target: {fileID: 1932722092397721461, guid: 571024d4415066c4986f3232a4807950,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.42399997
+      objectReference: {fileID: 0}
     - target: {fileID: 8214930361387448988, guid: 571024d4415066c4986f3232a4807950,
         type: 3}
       propertyPath: m_Layer
@@ -67074,11 +67108,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932722092397721461, guid: 571024d4415066c4986f3232a4807950,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.42399997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 571024d4415066c4986f3232a4807950, type: 3}
@@ -67457,10 +67486,9 @@ MonoBehaviour:
   numLifes: 0
   score: 0
   timeLeft: 1
-  win: 0
-  lose: 0
   actualColor: {r: 0, g: 0, b: 0, a: 0}
   timer: {fileID: 1733632065}
+  scoreLabel: {fileID: 0}
   panelsVelocity: {fileID: 255663458}
   panelsLife:
   - {fileID: 1360926541}
@@ -67498,7 +67526,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87aa12f79b2b55a408d9b32d5a3eedf8, type: 2}
   - {fileID: 11400000, guid: bc9ddded19fbf704dbf20279a6936370, type: 2}
   PostProces: {fileID: 1642645249}
-  Panel: {fileID: 1398707276}
+  PanelW: {fileID: 0}
+  PanelL: {fileID: 0}
   PointPosition:
   - {fileID: 6778593691750168891}
   - {fileID: 2044989330}

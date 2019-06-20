@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &540141033
 Transform:
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540141032}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.03, y: -6.65, z: -5.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1744515146}
@@ -125,7 +125,7 @@ GameObject:
   m_Name: pipeStand
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1744515146
@@ -135,7 +135,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172094044}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.85, y: -5.02, z: 43}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -155,7 +155,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.9461312, y: 4.032071, z: 0.9999981}
-  m_Center: {x: 4.953047, y: 6.6019263, z: 4.8999567}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1172094046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8684c951283a7ff4e87d2793cdc0bd2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointCollider: {fileID: 540141037}
-  PointPosition: {fileID: 540141033}
+  PointCollider: {fileID: 1172094045}
+  PointPosition: {fileID: 1744515146}
   speed: 1

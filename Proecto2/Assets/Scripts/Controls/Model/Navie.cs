@@ -34,7 +34,7 @@ public class Navie : Flight
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<Collider>();
         timer.text = (timeLeft).ToString();
-
+        win = lose = false;
     }
 
     // Start is called before the first frame update
