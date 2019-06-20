@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Oriol/Desktop/1r Build/Proecto2.exe
+C:/Users/Oriol/Desktop/1r Build/2Build/Rain Shiper.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 Assets/Scenes/SceneGame.unity
@@ -32,8 +32,8 @@ a2113831d3323f931007e1b3812dc814 Assembly-CSharp.dll:Cinemachine.CinemachineFoll
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 af93f9c42e90877a9ba31e37adfd900c Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.MotionBlur
 f935e99a7a0fee89a8259bab4a62ed58 Assembly-CSharp.dll:.FlexibleUIButton
-668adfd26e720d7a5e40b6c433261a2c Assembly-CSharp.dll:.PointPath
-aa750ee520e1bbcecd3d769c7f4e5508 Assembly-CSharp.dll:.EnemyIa
+9ee76d8409d630b950f1e0839b819859 Assembly-CSharp.dll:.PointPath
+5e2ec023435621c7d224abb017cbeae7 Assembly-CSharp.dll:.EnemyIa
 cbdaf6289eb255feedd0bee0a753faee Assembly-CSharp.dll:.ExtrudeRandomEdges
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -151,6 +151,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 Assembly-CSharp.dll:Cinemachine.Timeline.Cinema
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 c2e35492187c23d5105b2cbbf637f549 Assembly-CSharp.dll:Cinemachine.CinemachineFramingTransposer
 c45e7a17830bdea4c970a5181e5ffbf5 Assembly-CSharp.dll:.VideoMainMenu
+5badd3e1fb631c202848d40e82840a11 Assembly-CSharp.dll:.MapaRandomGeneric
 a93b2012e0dadb91ac8ccb87e0ef3875 Assembly-CSharp.dll:Cinemachine.CinemachinePOV
 61b9d9b6f4b6a222dfea8b131b3d3227 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.ChromaticAberration
 1262e720a92855a7ed32d7780e923950 Assembly-CSharp.dll:.MenuSettings
@@ -234,6 +235,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BackToTheMenu
 1cc71a08bece2af5ba7ae4660fb393f1 Assembly-CSharp.dll:Cinemachine.CinemachineCollider
 8860633d29a22ff64e02e18da3716cdf Assembly-CSharp.dll:UnityTemplateProjects.SimpleCameraController
 decd57e5be6a2bfff7c272cf89279e23 Assembly-CSharp.dll:Cinemachine.CinemachineBlenderSettings
@@ -245,11 +247,12 @@ c80d3238226b1d162e3ff2069e0972ed Assembly-CSharp.dll:ProBuilder2.Examples.Camera
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 6ff1c52123c50b3d73f35cd0e2e65dfd Assembly-CSharp.dll:Cinemachine.CinemachineSmoothPath
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Cinemachine.CinemachineHardLookAt
+b67588d4b8ed5d6e000721b9691a6840 Assembly-CSharp.dll:.RunerNavie
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.AxisButtonDrawer
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 f935e99a7a0fee89a8259bab4a62ed58 Assembly-CSharp.dll:.FlexibleUISlider
 d5630f96bd5a6a6eed7e1754c3fb8703 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessVolume
-4343f9de192770de3bb2376bb3d1804f Assembly-CSharp.dll:.Navie
+5b8a31ca50e6eb698afd144a50773b17 Assembly-CSharp.dll:.Navie
 d0987ce3e9092dbe0fa30d73f333fffa Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Grain
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
@@ -258,9 +261,10 @@ ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 8df2bee66a446c58b31b6bc7b1a991c6 Assembly-CSharp.dll:Cinemachine.CinemachineBrain
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Cinemachine.CinemachineHardLockToTarget
+db6254c2fa2fc050b1c3562e16c25658 Assembly-CSharp.dll:.tutorial
 2c38da0504d94a36e68bd2308d606900 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 5d58e2c6538e97bb37bbc552307c320c Assembly-CSharp.dll:ProBuilder2.Examples.RuntimeEdit
 1615d3bb1db164c1672020cea49440ce Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
-db6254c2fa2fc050b1c3562e16c25658 Assembly-CSharp.dll:.tutorial
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BackToTheMenu
-174d426f9fecd7379c6133b47cf7cf12 Assembly-CSharp.dll:.RunerNavie
+c907b96eb737e895809ccabef3e6406d Assembly-CSharp.dll:.UnlockWaves
+4a6278378a8d6f8c464b63fe7e9c7032 Assembly-CSharp.dll:.ControllGamesAndScenes
+4f82cf6400022127ffe9d9734d9381d6 Assembly-CSharp.dll:.CinematicWay

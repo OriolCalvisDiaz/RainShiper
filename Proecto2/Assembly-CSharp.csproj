@@ -151,8 +151,11 @@
     <Compile Include="Assets\Scripts\PointPath.cs" />
     <Compile Include="Assets\Scripts\PoolPartyObjectives.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\Utiles\CinematicWay.cs" />
+    <Compile Include="Assets\Scripts\Utiles\ControllGamesAndScenes.cs" />
     <Compile Include="Assets\Scripts\Utiles\MinMax.cs" />
     <Compile Include="Assets\Scripts\Utiles\Runners.cs" />
+    <Compile Include="Assets\Scripts\Utiles\UnlockWaves.cs" />
     <Compile Include="Assets\Scripts\VideoMainMenu.cs" />
     <Compile Include="Assets\tutorial.cs" />
     <Compile Include="Assets\Tutorial_Info\Scripts\Readme.cs" />

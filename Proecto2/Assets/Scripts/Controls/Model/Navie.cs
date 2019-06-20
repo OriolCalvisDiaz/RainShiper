@@ -9,7 +9,8 @@ public class Navie : Flight
     public PostProcessProfile[] PPV;
     public PostProcessVolume PostProces;
 
-    public GameObject Panel;
+    public GameObject PanelW;
+    public GameObject PanelL;
 
     float accelRatePerSec;
     float decelRatePerSec;
@@ -93,14 +94,18 @@ public class Navie : Flight
     private void LateUpdate()
     {
 
-        if (win)
+        if (win && !lose)
         {
-            Panel.SetActive(true);
+            PanelW.SetActive(true);
+        }
+        else if (lose && !win)
+        {
+            PanelL.SetActive(true);
         }
         if (!t.stop && !win && !lose)
         {
 
-            if (forwardVelocity != 0f)
+            //if (forwardVelocity != 0f)
                 rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(currentTurnX, currentTurnY, 0));
 
             if (!accelChange)
