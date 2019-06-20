@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Flight : Controller
+[System.Serializable]
+public abstract class Flight : Player
 {
+    public Color actualColor;
 
+    public Text timer;
+    public Image panelsVelocity;
+    public Image[] panelsLife;
 
     [MinMaxSlider(-100f, 100f)]
     public MinMax speed;
@@ -14,6 +20,13 @@ public class Flight : Controller
 
     [MinMaxSlider(-100f, 100f)]
     public MinMax spaceSpeed;
+
+    [MinMaxSlider(-100f, 100f)]
+    public MinMax superSpeed;
+
+    public int countPortals = 0;
+
+    public int comboSpeed = 0;
 
     [Range(0f,100f)]
     public float timeZeroToMax = 2.5f;
@@ -27,119 +40,24 @@ public class Flight : Controller
     public float turnAnglePerSec = 90f;
 
     public bool onSpace;
+    public bool onTransition;
+    public bool onTurbo;
 
-    float accelRatePerSec;
-    float decelRatePerSec;
-    float breakRatePerSec;
-
-    float forwardVelocity;
-    float currentTurnX, currentTurnY;
     public bool accelChange;
+    public bool changeState;
 
-    private void Start()
-    {
-        accelRatePerSec = speed.Max / timeZeroToMax;
-        decelRatePerSec = -speed.Max / timeZeroToMax;
-        breakRatePerSec = -speed.Max / timeZeroToMax;
-        forwardVelocity = 0f;
-        currentTurnX = 0f;
-        currentTurnY = 0f;
-        speed = normalSpeed;
-    }
 
-    public override void ReadInput(InputData data)
-    {
+    public virtual bool Grounded() => false;
 
-        if (data.a[0] != 0f)
-        {
-            if (transform.localRotation.x <= 90)
-            {
-                currentTurnY = turnAnglePerSec * Time.deltaTime * (data.a[0] > 0 ? -1 : 1);
-            }
-            else
-            {
-                currentTurnY = turnAnglePerSec * Time.deltaTime * (data.a[0] > 0 ? 1 : -1);
-            }
-        }
-        if (data.a[1] != 0f)
-        {
-            currentTurnX = turnAnglePerSec * Time.deltaTime * (data.a[1] > 0 ? 1 : -1);
-        }
-        //flyVerocity += (Vector3.up * data.a[1]) * vel;
+    public virtual void increseCombo() {}
+    public virtual void ResetCombo() {}
 
-        //JUMPFLY
-        if (data.b[0] == true)
-        {
-            Accel(accelRatePerSec);
-        }
-        if (data.b[1] == true) { }
-            //ESC
-        if (data.b[2] == true)
-        {
-            forwardVelocity += breakRatePerSec * Time.deltaTime;
-            forwardVelocity = Mathf.Max(forwardVelocity, speed.Min);
-            accelChange = true;
-        }
-        if (data.b[7] == true) { }
-            //Pause
+    public virtual void ChargeVelocity(){}
 
-        newInput = true;
-    }
+    public virtual void Accel(float a) {}
 
-    bool Grounded() => Physics.Raycast(transform.position, Vector3.down, RayLarge);
+    public virtual void SuperSpeed(float a) {}
 
-    void LateUpdate()
-    {
-        if (forwardVelocity != 0f)
-        {
-            rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(currentTurnX, currentTurnY, 0));
-        }
-        if (!accelChange) { 
-            Accel(decelRatePerSec);
-        }
-        rb.velocity = transform.forward * -forwardVelocity;
+    public virtual bool CountDown()=> false;
 
-        newInput = false;
-        currentTurnY = currentTurnX = 0f;
-        accelChange = false;
-    }
-
-    void ResetMovement()
-    {
-
-    }
-
-    void Accel(float a)
-    {
-        forwardVelocity += a * Time.deltaTime;
-        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max);
-        accelChange = true;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Space")
-        {
-            if (onSpace)
-            {
-                speed = normalSpeed;
-                onSpace = false;
-                Debug.Log("in");
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Space")
-        {
-            if (!onSpace)
-            {
-                speed = spaceSpeed;
-                onSpace = true;
-                Debug.Log("out");
-
-            }
-        }
-    }
 }

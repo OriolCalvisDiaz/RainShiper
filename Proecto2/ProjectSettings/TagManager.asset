@@ -9,6 +9,7 @@ TagManager:
   - Race
   - Map
   - Space
+  - PowerUp
   layers:
   - Default
   - TransparentFX
