@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomPropertyDrawer(typeof(AxisKeys))]
-public class AxisButtonDrawer : PropertyDrawer
+public class AxisButtonDrawer : MonoBehaviour
 {
+    /*
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
         EditorGUI.BeginProperty(position, label, property);
@@ -32,4 +32,5 @@ public class AxisButtonDrawer : PropertyDrawer
 
         EditorGUI.EndProperty();
     }
+    */
 }

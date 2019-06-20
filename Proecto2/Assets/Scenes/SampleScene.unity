@@ -425,6 +425,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
   antialiasingMode: 1
   temporalAntialiasing:
     jitterSpread: 0.75
@@ -1988,6 +1989,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: a7ef321d40aa8614a90010996cda7011,
         type: 3}
+    - target: {fileID: 11455572, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455572, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455572, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
 --- !u!1001 &1007004827

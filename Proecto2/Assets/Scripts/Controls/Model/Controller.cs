@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
 public abstract class Controller : MonoBehaviour
@@ -11,10 +12,4 @@ public abstract class Controller : MonoBehaviour
     protected Rigidbody rb;
     protected Collider coll;
     protected bool newInput;
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-        coll = GetComponent<Collider>();
-    }
 }

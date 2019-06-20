@@ -55,6 +55,28 @@ ModelImporter:
     2100006: Cloth
     2100008: Dark_metal
     2100010: Green_metal
+    2100012: Mesh10_Group11_Cannon_right_2_Group1_ModelMat
+    2100014: Mesh11_Group13_Group12_Group1_ModelMat
+    2100016: Mesh12_Group14_Group12_Group1_ModelMat
+    2100018: Mesh13_Group15_Group12_Group1_ModelMat
+    2100020: Mesh14_Group16_Group12_Group1_ModelMat
+    2100022: Mesh15_Group17_Group12_Group1_ModelMat
+    2100024: Mesh16_Group18_Group12_Group1_ModelMat
+    2100026: Mesh17_Group19_Group12_Group1_ModelMat
+    2100028: Mesh18_Group20_Group12_Group1_ModelMat
+    2100030: Mesh19_Group21_Group12_Group1_ModelMat
+    2100032: Mesh1_Group2_Cannon_left_1_Group1_ModelMat
+    2100034: Mesh20_Group22_Group12_Group1_ModelMat
+    2100036: Mesh21_Group23_Group12_Group1_ModelMat
+    2100038: Mesh22_Group12_Group1_ModelMat
+    2100040: Mesh2_Group3_Cannon_left_1_Group1_ModelMat
+    2100042: Mesh3_Group4_Cannon_left_2_Group1_ModelMat
+    2100044: Mesh4_Group5_Cannon_left_2_Group1_ModelMat
+    2100046: Mesh5_Group6_Cannon_front_Group1_ModelMat
+    2100048: Mesh6_Group7_Cannon_front_Group1_ModelMat
+    2100050: Mesh7_Group8_Cannon_right_1_Group1_ModelMat
+    2100052: Mesh8_Group9_Cannon_right_1_Group1_ModelMat
+    2100054: Mesh9_Group10_Cannon_right_2_Group1_ModelMat
     2300000: Mesh10_Group11_Cannon_right_2_Group1_Model
     2300002: Mesh11_Group13_Group12_Group1_Model
     2300004: Mesh12_Group14_Group12_Group1_Model
@@ -121,7 +143,37 @@ ModelImporter:
     4300038: Mesh7_Group8_Cannon_right_1_Group1_Model
     4300040: Mesh8_Group9_Cannon_right_1_Group1_Model
     4300042: Mesh9_Group10_Cannon_right_2_Group1_Model
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cloth
+    second: {fileID: 2100000, guid: 18f9f4010db75f84b927025a66c536df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_metal
+    second: {fileID: 2100000, guid: a2b8e5d51fa3cb74282584c39f32dbce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_metal
+    second: {fileID: 2100000, guid: eb8303b224518894b9cca647c90e4afc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey_metal_1
+    second: {fileID: 2100000, guid: aeee8d36a038ee0448d1e5efacb3800a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey_metal_3
+    second: {fileID: 2100000, guid: 4549626fa14955e4aa69c670fdfe9655, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 77823cae324a64d4bbb10a0f6e65d2c4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

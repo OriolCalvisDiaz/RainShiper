@@ -11,6 +11,12 @@ public class EnemyIa : MonoBehaviour
     public PointPath StartPoint;
     public PointPath EndPoint;
 
+    [MinMaxSlider(-100f, 100f)]
+    public MinMax speed;
+
+    [MinMaxSlider(-100f, 100f)]
+    public MinMax superSpeed;
+
     public Color rayColor = Color.green;
     public NextPointPath NextOne;
 
@@ -31,7 +37,7 @@ public class EnemyIa : MonoBehaviour
             position = path.PointPosition.position;
             Gizmos.DrawLine(previous, position);
             previous = path.PointPosition.position;
-            Gizmos.DrawSphere(position, 15f);
+            Gizmos.DrawSphere(position, 1f);
             
         }
         position = EndPoint.PointPosition.position;
@@ -48,6 +54,7 @@ public class EnemyIa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        agent.speed = speed.RandomValue;
         //Debug.DrawRay(this.transform.position, Vector3.down, Color.blue, 3f);
         //RaycastHit Hit;
         //if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Hit, 3f))
@@ -75,16 +82,9 @@ public class EnemyIa : MonoBehaviour
         else
         {
             agent.destination = EndPoint.PointPosition.position;
-            if (loop > 3)
-            {
+
                 //LOSE
-            }
-            else
-            {
-                loop++;
-                indexOfPoints = 0;
-                NextOne.Next(StartPoint.PointCollider, StartPoint.PointPosition, indexOfPoints);
-            }
+
         }
 
         //this.GetComponentInChildren<Rigidbody>().rotation.SetLookRotation(this.transform); //= //Quaternion.Euler(this.GetComponentInChildren<Rigidbody>().rotation.eulerAngles ));

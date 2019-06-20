@@ -16,6 +16,7 @@ public class KeyboardTracker : DeviceTracker
     public override void Refresh()
     {
         im = GetComponent<InputManager>();
+        im.RefreshTracker();
 
         KeyCode[] newB = new KeyCode[im.bC];
         AxisKeys[] newA = new AxisKeys[im.aC];

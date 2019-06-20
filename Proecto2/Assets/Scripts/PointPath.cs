@@ -6,6 +6,6 @@ public class PointPath : MonoBehaviour
 {
     public Collider PointCollider;
     public Transform PointPosition;
-    public int num;
+    public bool speed = true;
 }
 
