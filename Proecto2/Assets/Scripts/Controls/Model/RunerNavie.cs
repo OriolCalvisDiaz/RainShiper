@@ -94,6 +94,8 @@ public class RunerNavie : Flight
 
     private void LateUpdate()
     {
+        timer.text = (Mathf.Round(timeLeft)).ToString();
+
         if (win)
         {
             Panel.SetActive(true);
@@ -134,9 +136,12 @@ public class RunerNavie : Flight
 
             changeState = false;
             //hit.collider.transform.position == PointPosition[indexOfPoints].PointPosition.position && hit.collider.isTrigger ||
-            if (Vector3.Distance(PointPosition[countPortals].PointPosition.position, transform.position) < 15f)
+            if (countPortals <= PointPosition.ToArray().Length - 1)
             {
-                countPortals++;
+                if (Vector3.Distance(PointPosition[countPortals].PointPosition.position, transform.position) < 15f)
+                {
+                    countPortals++;
+                }
             }
         }
         else

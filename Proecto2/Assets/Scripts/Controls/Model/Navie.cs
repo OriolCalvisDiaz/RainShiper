@@ -92,6 +92,7 @@ public class Navie : Flight
 
     private void LateUpdate()
     {
+
         if (win)
         {
             Panel.SetActive(true);
@@ -246,7 +247,7 @@ public class Navie : Flight
     public override void Accel(float a)
     {
         forwardVelocity += a * Time.deltaTime;
-        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max);
+        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max + comboSpeed);
         accelChange = true;
     }
 
@@ -256,7 +257,7 @@ public class Navie : Flight
         speed.Min -= normalSpeed.Min * Time.deltaTime;
 
         forwardVelocity += a * Time.deltaTime;
-        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max);
+        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, speed.Max + comboSpeed);
         accelChange = true;
     }
 
@@ -277,10 +278,6 @@ public class Navie : Flight
                     timer.text = "0";
                     onTurbo = false;
                     panelsVelocity.color = Color.Lerp(actualColor, Color.white, 1f);
-                }
-                else
-                {
-                    timer.text = (Mathf.Round(timeLeft)).ToString();
                 }
 
                 if (onSpace)
